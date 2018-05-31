@@ -1,0 +1,7 @@
+{
+  "name": "mockProject",
+  "dependencies": {
+    "@types/node": "8.10.17",
+    "typescript": "2.8.3"
+  }
+}
