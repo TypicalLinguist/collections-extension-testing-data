@@ -7,4 +7,4 @@ export class Shop {
     }
 }
 
-const ShopLocations = new Array<string>('Cape Town CBD', 'Midrand', 'OtherPlace')
+const ShopLocations = new Array<"Cape Town CBD" | "Midrand" | "OtherPlace">('Cape Town CBD', 'Midrand', 'OtherPlace')
