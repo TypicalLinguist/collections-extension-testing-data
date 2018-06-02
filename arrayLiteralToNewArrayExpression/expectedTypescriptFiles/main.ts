@@ -1,13 +1,21 @@
 import {Brands} from "./Brands";
 import {Shop} from "./Shop";
 
-const midrandShop = new Shop(new Array<"Toiletries" | "Wine">('Toiletries', 'Wine'));
+const midrandShop = new Shop(new Array<string>('Toiletries', 'Wine'));
 
 function main() {
-
-    const productsByBrand = new Array<(string | string[])[]>(['Bakers', ['Tennis Biscuit', 'EatSomeMore']], ['Cadbury', ['Top Deck', 'Aero']]);
+    const productsByBrand = new Array<(string | string[])[]>(
+        new Array<string | string[]>(
+            'Bakers',
+            new Array<string>('Tennis Biscuit', 'EatSomeMore')
+        ),
+        new Array<string | string[]>(
+            'Cadbury',
+            new Array<string>('Top Deck', 'Aero')
+        )
+    );
 
     midrandShop.products = productsByBrand.flatten().filter((product: string) => Object.getOwnPropertyNames(Brands).includes(product));
     midrandShop.brands = Object.getOwnPropertyNames(Brands);
-    midrandShop.updateProducts(new Array<"Top Deck" | "Aero">('Top Deck', 'Aero'))
+    midrandShop.updateProducts(new Array<string>('Top Deck', 'Aero'))
 }
