@@ -6,7 +6,7 @@ export class Shop {
         console.log('LightsOn')
     }
     
-    updateProducts(products = new Array<"Tennis Biscuit" |  "EatSomeMore">('Tennis Biscuit', 'EatSomeMore')) {
+    updateProducts(products = new Array<"Tennis Biscuit" | "EatSomeMore">('Tennis Biscuit', 'EatSomeMore')) {
         this.products = products
     }
 }
