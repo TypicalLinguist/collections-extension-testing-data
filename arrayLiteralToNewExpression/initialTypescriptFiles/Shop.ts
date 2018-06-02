@@ -6,3 +6,5 @@ export class Shop {
         console.log('LightsOn')
     }
 }
+
+const ShopLocations = ['Cape Town CBD', 'Midrand', 'OtherPlace']    
