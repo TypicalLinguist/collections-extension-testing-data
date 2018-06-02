@@ -1,7 +1,10 @@
 export class Shop {
     products: string[];
     brands: string[] = new Array<"Weight-Less">('Weight-Less');
-
+    
+    constructor(public aisleNames = new Array<"Personal Highgene" | "Coldrinks" | "Baked goods" | "Canned Goods">('Personal Highgene', 'Coldrinks', 'Baked goods', 'Canned Goods')){
+    }
+    
     switchOnLights() {
         console.log('LightsOn')
     }

@@ -1,8 +1,9 @@
 import {Brands} from "./Brands";
 import {Shop} from "./Shop";
 
+const midrandShop = new Shop(new Array<"Toiletries" | "Wine">('Toiletries', 'Wine'));
+
 function main() {
-    const midrandShop = new Shop();
 
     const productsByBrand = new Array<(string | string[])[]>(['Bakers', ['Tennis Biscuit', 'EatSomeMore']], ['Cadbury', ['Top Deck', 'Aero']]);
 
