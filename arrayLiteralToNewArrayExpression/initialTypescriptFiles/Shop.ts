@@ -5,6 +5,10 @@ export class Shop {
     switchOnLights() {
         console.log('LightsOn')
     }
+
+    updateProducts(products = ['Tennis Biscuit', 'EatSomeMore']) {
+        this.products = products
+    }
 }
 
-const ShopLocations = ['Cape Town CBD', 'Midrand', 'OtherPlace']    
+const ShopLocations = ['Cape Town CBD', 'Midrand', 'OtherPlace']
