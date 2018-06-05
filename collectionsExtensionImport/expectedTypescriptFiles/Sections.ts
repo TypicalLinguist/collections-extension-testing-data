@@ -1,6 +1,7 @@
 import {Array, Map} from "@typical-linguist/collections-extension";
 
-type SectionValueType = (string | number | { number: number } | { tool: string })[];
+type UnionReferenceType = string | number | { number: number } | { tool: string }
+type SectionValueType = (UnionReferenceType)[];
 
 export const Sections = new Map<string, SectionValueType>(new Array<any>(
     new Array<string | SectionValueType>(
