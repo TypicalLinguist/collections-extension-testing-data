@@ -1,5 +1,5 @@
 type UnionReferenceType = string | number | { number: number } | { tool: string }
-type SectionValueType = (UnionReferenceType)[];
+type SectionValueType = Array<UnionReferenceType>;
 
 export const Sections = new Map<string, SectionValueType>(
     new Array<any>(
@@ -11,6 +11,6 @@ export const Sections = new Map<string, SectionValueType>(
             "Tools",
             new Array<UnionReferenceType>("Tool1", {tool: "Other"}, 5, 6, "Tool7")
         )
-    )
+    ),
 );
 

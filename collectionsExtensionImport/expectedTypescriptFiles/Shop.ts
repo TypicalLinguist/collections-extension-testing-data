@@ -1,18 +1,18 @@
 import {Array, Map} from "@typical-linguist/collections-extension";
 
 export class Shop {
-    products: string[];
-    brands: string[] = new Array<string>("Weight-Less");
-    _sections: Map<string, any[]>;
+    products: Array<string>;
+    brands: Array<string> = new Array<string>("Weight-Less");
+    _sections: Map<string, Array<any>>;
 
     constructor(public aisleNames = new Array<string>("Personal Hygiene", "Coldrinks", "Baked goods", "Canned Goods")) {
     }
 
-    set sections(sections: Map<string, any[]>) {
+    set sections(sections: Map<string, Array<any>>) {
         this._sections = sections
     }
 
-    updataSections(sections = new Map<string, {obj:string}[]>(
+    updataSections(sections = new Map<string, Array<{obj:string}>>(
         new Array<any>(
             new Array<string | Array<{obj: string}>>(
                 "Things",

@@ -5,12 +5,12 @@ import {Shop} from "./Shop";
 const midrandShop = new Shop(new Array<string>('Toiletries', 'Wine'));
 
 function main() {
-    const productsByBrand = new Array<(string | string[])[]>(
-        new Array<string | string[]>(
+    const productsByBrand = new Array<Array<(string | Array<string>)>>(
+        new Array<string | Array<string>>(
             'Bakers',
             new Array<string>('Tennis Biscuit', 'EatSomeMore')
         ),
-        new Array<string | string[]>(
+        new Array<string | Array<string>>(
             'Cadbury',
             new Array<string>('Top Deck', 'Aero')
         )
