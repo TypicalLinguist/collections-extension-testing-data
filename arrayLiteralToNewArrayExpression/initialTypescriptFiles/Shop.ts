@@ -1,9 +1,9 @@
 export class Shop {
     products: string[];
-    brands: string[] = ['Weight-Less'];
+    brands: string[] = ["Weight-Less"];
     _sections: Map<string, any[]>;
 
-    constructor(public aisleNames = ['Personal Hygiene', 'Coldrinks', 'Baked goods', 'Canned Goods']) {
+    constructor(public aisleNames = ["Personal Hygiene", "Coldrinks", "Baked goods", "Canned Goods"]) {
     }
 
     set sections(sections: Map<string, any[]>) {
@@ -23,12 +23,12 @@ export class Shop {
     }
 
     switchOnLights() {
-        console.log('LightsOn')
+        console.log("LightsOn")
     }
 
-    updateProducts(products = ['Tennis Biscuit', 'EatSomeMore']) {
+    updateProducts(products = ["Tennis Biscuit", "EatSomeMore"]) {
         this.products = products
     }
 }
 
-const ShopLocations = ['Cape Town CBD', 'Midrand', 'OtherPlace']
+const ShopLocations = ["Cape Town CBD", "Midrand", "OtherPlace"]
