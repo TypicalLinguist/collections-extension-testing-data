@@ -5,7 +5,7 @@ import {Shop} from "./Shop";
 const midrandShop = new Shop(new Array<string>('Toiletries', 'Wine'));
 
 function main() {
-    const productsByBrand = new Array<Array<(string | Array<string>)>>(
+    const productsByBrand = new Array<Array<string | Array<string>>>(
         new Array<string | Array<string>>(
             'Bakers',
             new Array<string>('Tennis Biscuit', 'EatSomeMore')
