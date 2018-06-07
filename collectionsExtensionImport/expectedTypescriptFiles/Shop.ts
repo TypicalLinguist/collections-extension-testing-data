@@ -12,7 +12,7 @@ export class Shop {
         this._sections = sections
     }
 
-    updataSections(sections = new Map<string, any[]>(
+    updataSections(sections = new Map<string, {obj:string}[]>(
         new Array<any>(
             new Array<string | Array<{obj: string}>>(
                 "Things",

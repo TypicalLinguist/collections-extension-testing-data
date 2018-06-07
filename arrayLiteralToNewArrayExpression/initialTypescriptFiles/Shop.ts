@@ -10,7 +10,7 @@ export class Shop {
         this._sections = sections
     }
 
-    updataSections(sections = new Map<string, any[]>(
+    updataSections(sections = new Map<string, { obj: string }[]>(
         [
             [
                 "Things",
