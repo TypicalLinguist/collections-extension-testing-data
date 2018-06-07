@@ -14,10 +14,10 @@ export class Shop {
 
     updataSections(sections = new Map<string, any[]>(
         new Array<any>(
-            new Array<string | any[]>(
+            new Array<string | Array<{obj: string}>>(
                 "Things",
                 new Array<{obj: string}>({obj: "stuff"})
-            )
+            ),
         )
                    )
     ) {
@@ -34,3 +34,4 @@ export class Shop {
 }
 
 const ShopLocations = new Array<string>("Cape Town CBD", "Midrand", "OtherPlace")
+

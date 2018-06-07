@@ -11,12 +11,12 @@ export class Shop {
     }
 
     updataSections(sections = new Map<string, any[]>(
-        [
-            [
+        new Array<any>(
+            new Array<string | Array<{obj: string}>>(
                 "Things",
-                [{obj: "stuff"}]
-            ]
-        ]
+                new Array<{obj: string}>({obj: "stuff"})
+            ),
+        )
                    )
     ) {
         console.log("This is deprecated, please use setter")
