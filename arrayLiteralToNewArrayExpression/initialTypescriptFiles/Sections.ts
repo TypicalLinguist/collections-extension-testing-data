@@ -1,4 +1,4 @@
-type UnionReferenceType = string | number | { number: number } | { tool: string }
+type UnionReferenceType = string | number | { number: number; } | { tool: string; }
 type SectionValueType = (UnionReferenceType)[];
 
 export const Sections = new Map<string, SectionValueType>([
