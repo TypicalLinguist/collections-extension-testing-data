@@ -17,7 +17,7 @@ export class Shop {
             new Array<string | Array<{obj: string;}>>(
                 "Things",
                 new Array<{obj: string;}>({obj: "stuff"})
-            ),
+            )
         )
                    )
     ) {
