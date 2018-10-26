@@ -1,6 +1,6 @@
 import {Array} from "@typical-linguist/collections-extension";
-import {Brands} from "../Brands";
-import {Shop} from "../Shop";
+import {Brands} from "./Brands";
+import {Shop} from "./Shop";
 
 const midrandShop = new Shop(new Array<string>('Toiletries', 'Wine'));
 
