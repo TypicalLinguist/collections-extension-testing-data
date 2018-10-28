@@ -35,4 +35,8 @@ export class Shop {
     }
 }
 
+function privateStockCount(...stockValues: any[]) {
+
+}
+
 const ShopLocations = ["Cape Town CBD", "Midrand", "OtherPlace"]
