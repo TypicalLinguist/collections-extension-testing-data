@@ -29,6 +29,10 @@ export class Shop {
     updateProducts(products = ["Tennis Biscuit", "EatSomeMore"]) {
         this.products = products
     }
+
+    stockCount(...stockValues: any[]) {
+        console.log(stockValues)
+    }
 }
 
 const ShopLocations = ["Cape Town CBD", "Midrand", "OtherPlace"]
