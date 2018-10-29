@@ -1,4 +1,4 @@
-import {Array} from "@typical-linguist/collections-extension";
+import {Array, Map} from "@typical-linguist/collections-extension";
 import {Brands} from "./Brands";
 import {Shop} from "./Shop";
 
