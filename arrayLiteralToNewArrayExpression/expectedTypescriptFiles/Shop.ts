@@ -30,14 +30,13 @@ export class Shop {
         this.products = products
     }
 
-    stockCount(...stockValues: any[]) {
-        stockValues = new Array<any>(stockValues);
+    stockCount(...stockValues: Array<any>) {
         console.log(stockValues)
     }
 }
 
-function privateStockCount(...stockValues: any[]) {
-    stockValues = new Array<any>(stockValues);
+function privateStockCount(...stockValues: Array<any>) {
+    
 }
 
 const ShopLocations = new Array<string>("Cape Town CBD", "Midrand", "OtherPlace")
