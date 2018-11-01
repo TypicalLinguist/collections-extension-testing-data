@@ -16,7 +16,7 @@ function main() {
         )
     );
 
-    midrandShop.products = (productsByBrand.flatten().filter((product: string) => Object.getOwnPropertyNames(Brands).includes(product)) as Array<string>);
+    midrandShop.products = (productsByBrand.flatten().filter((product: string) => (Object.getOwnPropertyNames(Brands) as Array<string>).includes(product)) as Array<string>);
     midrandShop.brands = (Object.getOwnPropertyNames(Brands) as Array<string>);
     midrandShop.updateProducts(new Array<string>('Top Deck', 'Aero'))
 }
