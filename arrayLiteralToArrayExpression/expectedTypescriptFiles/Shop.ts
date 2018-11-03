@@ -4,7 +4,7 @@ export class Shop {
     products: Array<string>;
     brands: Array<string> = new Array<string>("Weight-Less");
     _sections: Map<string, Array<any>>;
-    staff: Array<string | Convoluted>
+    staff: Array<string | Convoluted>;
 
     constructor(public aisleNames = new Array<string>("Personal Hygiene", "Coldrinks", "Baked goods", "Canned Goods")) {
     }
