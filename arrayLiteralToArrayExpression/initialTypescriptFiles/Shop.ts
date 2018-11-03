@@ -1,7 +1,10 @@
+type Convoluted = number | number[]
+
 export class Shop {
     products: string[];
     brands: string[] = ["Weight-Less"];
     _sections: Map<string, any[]>;
+    staff: (string | Convoluted)[];
 
     constructor(public aisleNames = ["Personal Hygiene", "Coldrinks", "Baked goods", "Canned Goods"]) {
     }
